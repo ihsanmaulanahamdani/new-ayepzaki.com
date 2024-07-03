@@ -11,11 +11,9 @@ const DetailArticle = ({ article }) => {
   }
 
   return (
-    <ArticleLayout
-      meta={meta}
-      featureImage={article.feature_image}
-      children={<div dangerouslySetInnerHTML={{ __html: article.html }} />}
-    />
+    <ArticleLayout meta={meta} featureImage={article.feature_image}>
+      <div dangerouslySetInnerHTML={{ __html: article.html }} />
+    </ArticleLayout>
   )
 }
 
@@ -29,7 +27,11 @@ export async function getServerSideProps(context) {
       },
     }
   } catch (error) {
-    return { props: {} }
+    return {
+      props: {
+        article: null,
+      },
+    }
   }
 }
 
