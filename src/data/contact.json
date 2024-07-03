@@ -1,0 +1,31 @@
+{
+  "tabTitle": "H. AYEP ZAKI, S.E., M.M.",
+  "title": "Hubungi H. AYEP ZAKI, S.E., M.M.",
+  "description": "Hubungi saya melalui email atau social media.",
+  "socialsMedia": [
+    {
+      "name": "Instagram",
+      "label": "Follow on Instagram",
+      "description": "Update keseharian saya dalam Menata Kebaikan untuk Sukabumi",
+      "url": "https://www.instagram.com/ayepzaki"
+    },
+    {
+      "name": "YouTube",
+      "label": "Subscribe on YouTube",
+      "description": "Video kegiatan saya setiap hari dalam Menata kebaikan untuk Sukabumi",
+      "url": "https://www.youtube.com/ayepzaki"
+    },
+    {
+      "name": "Facebook",
+      "label": "Follow on Facebook",
+      "description": "Postingan kegiatan saya di kanal Facebook",
+      "url": "https://www.facebook.com/ayepzaki.official"
+    },
+    {
+      "name": "X",
+      "label": "Follow on X",
+      "description": "Lihat cuitan saya di X",
+      "url": "https://x.com/ayepzaki_resmi"
+    }
+  ]
+}
