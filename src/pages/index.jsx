@@ -329,12 +329,12 @@ function ProductList() {
 
 function Contacts() {
   let contacts = [
-    {
-      title: 'Nomor Whatsapp',
-      description: '081212341234',
-      Icon: PhoneIcon,
-      url: `https://wa.me`,
-    },
+    // {
+    //   title: 'Nomor Whatsapp',
+    //   description: '081212341234',
+    //   Icon: PhoneIcon,
+    //   url: `https://wa.me`,
+    // },
     {
       title: 'Email',
       description: 'ayepzaki.com@gmail.com',
