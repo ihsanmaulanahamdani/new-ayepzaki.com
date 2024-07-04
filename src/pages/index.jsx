@@ -411,7 +411,7 @@ export default function Home({ articles }) {
         <title>{homepage.title}</title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="Ayep Zaki berperan aktif dalam membangun perekonomian dan pendidikan serta menegakan supremasi hukum, guna mewujudkan kemakmuran dan keadilan di Negara Kesatuan Republik Indonesia."
         />
       </Head>
       <Container className="mt-9">
