@@ -20,9 +20,11 @@ function SocialLink({ className, href, children, icon: Icon }) {
       <Link
         href={href}
         target="_blank"
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+        className="group flex items-center text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
       >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+        <div className="h-8 w-8 rounded-full border p-1.5 group-hover:border-teal-500">
+          <Icon className="flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+        </div>
         <span className="ml-4">{children}</span>
       </Link>
     </li>

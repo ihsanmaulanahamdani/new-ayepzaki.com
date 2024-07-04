@@ -8,15 +8,15 @@ export default function ThankYou() {
   return (
     <>
       <Head>
-        <title>{`You're subscribed - ${homepage.tabTitle}`}</title>
+        <title>{`Kamu Berlangganan - ${homepage.tabTitle}`}</title>
         <meta
           name="description"
-          content="Thanks for subscribing to my newsletter."
+          content="Terima kasih sudah berlangganan ke Blog Saya."
         />
       </Head>
       <SimpleLayout
-        title="Thanks for subscribing."
-        intro="I'll send you an email any time I publish a new blog post, release a new project, or have anything interesting to share that I think you’d want to hear about. You can unsubscribe at any time, no hard feelings."
+        title="Terima kasih sudah berlangganan."
+        intro="Saya akan mengirim email ketika Blog ter-publish. Kamu dapat berhenti berlangganan kapanpun."
       />
     </>
   )
