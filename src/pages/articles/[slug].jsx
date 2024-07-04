@@ -11,7 +11,11 @@ const DetailArticle = ({ article }) => {
   }
 
   return (
-    <ArticleLayout meta={meta} featureImage={article.feature_image}>
+    <ArticleLayout
+      meta={meta}
+      featureImage={article.feature_image}
+      featureImageCaption={article.feature_image_caption}
+    >
       <div dangerouslySetInnerHTML={{ __html: article.html }} />
     </ArticleLayout>
   )

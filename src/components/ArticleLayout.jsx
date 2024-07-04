@@ -22,6 +22,7 @@ export function ArticleLayout({
   children,
   meta,
   featureImage,
+  featureImageCaption,
   isRssFeed = false,
   previousPathname,
 }) {
@@ -68,6 +69,12 @@ export function ArticleLayout({
                 className="mt-8 h-auto w-full"
                 alt="Feature Image"
               />
+              {featureImageCaption && (
+                <div
+                  className="mt-1 text-center text-sm italic text-zinc-400 dark:text-zinc-500"
+                  dangerouslySetInnerHTML={{ __html: featureImageCaption }}
+                />
+              )}
               <Prose className="mt-8">{children}</Prose>
             </article>
           </div>
