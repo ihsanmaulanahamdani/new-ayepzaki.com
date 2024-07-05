@@ -160,13 +160,32 @@ function Article({ article }) {
 
   return (
     <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`} isBlank={false}>
-        {article.title}
-      </Card.Title>
-      <Card.Eyebrow as="time" dateTime={date} decorate>
-        {formatDate(date)}
-      </Card.Eyebrow>
-      <Card.Description>{article.excerpt}</Card.Description>
+      <div className="flex gap-x-3">
+        <div>
+          <img
+            src={article.feature_image}
+            className="mb-3 h-auto w-full rounded-md sm:hidden"
+            alt="Feature Image"
+          />
+          <Card.Title href={`/articles/${article.slug}`} isBlank={false}>
+            {article.title}
+          </Card.Title>
+          <Card.Eyebrow
+            as="time"
+            dateTime={date}
+            className="md:hidden"
+            decorate
+          >
+            {formatDate(date)}
+          </Card.Eyebrow>
+          <Card.Description>{article.excerpt}</Card.Description>
+        </div>
+        <img
+          src={article.feature_image}
+          className="hidden h-auto w-52 rounded-md sm:block"
+          alt="Feature Image"
+        />
+      </div>
       <Card.Cta>Read article</Card.Cta>
     </Card>
   )
