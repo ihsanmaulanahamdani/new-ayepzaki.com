@@ -5,7 +5,7 @@ import GhostContentAPI from '@tryghost/content-api'
 // Create API instance with site credentials
 const api = new GhostContentAPI({
   url: 'https://blog.ayepzaki.com',
-  key: 'a601ddb8ad229dfed131ab12cc',
+  key: '68b8e00a726bb60554231660f8',
   version: 'v5.0',
 })
 
