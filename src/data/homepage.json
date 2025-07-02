@@ -6,22 +6,26 @@
     {
       "name": "instagram",
       "label": "Follow on Instagram",
-      "url": "https://www.instagram.com/ayepzaki"
+      "url": "https://www.instagram.com/ayepzaki",
+      "size": "h-8 w-8"
     },
     {
       "name": "youtube",
       "label": "Subscribe on YouTube",
-      "url": "https://www.youtube.com/ayepzaki"
+      "url": "https://www.youtube.com/ayepzaki",
+      "size": "h-8 w-8"
     },
     {
       "name": "facebook",
       "label": "Follow on Facebook",
-      "url": "https://www.facebook.com/ayepzaki.official"
+      "url": "https://www.facebook.com/ayepzaki.official",
+      "size": "h-6 w-6"
     },
     {
       "name": "twitter",
       "label": "Follow on YouTube",
-      "url": "https://twitter.com/ayepzaki_resmi"
+      "url": "https://twitter.com/ayepzaki_resmi",
+      "size": "h-6 w-6"
     }
   ],
   "images": [

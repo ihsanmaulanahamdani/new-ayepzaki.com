@@ -191,10 +191,10 @@ function Article({ article }) {
   )
 }
 
-function SocialLink({ icon: Icon, ...props }) {
+function SocialLink({ icon: Icon, size="", ...props }) {
   return (
     <Link className="group -m-1 p-1" {...props}>
-      <div className="h-10 w-10 rounded-full border p-2">
+      <div className={size}>
         <Icon className="fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
       </div>
     </Link>
@@ -249,7 +249,7 @@ function Resume() {
       company: 'Yayasan Pembina Pendidikan Doa Bangsa',
       title: 'Pembina',
       logo: logoYPPDB,
-      start: '2015',
+      start: '2010',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
@@ -259,7 +259,7 @@ function Resume() {
       company: 'Tempe Azaki',
       title: 'Founder',
       logo: logoAZAKI,
-      start: '2015',
+      start: '2019',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
@@ -302,11 +302,12 @@ function Resume() {
               >
                 <time dateTime={role.start.dateTime ?? role.start}>
                   {role.start.label ?? role.start}
-                </time>{' '}
+                </time>
+                {/* {' '}
                 <span aria-hidden="true">—</span>{' '}
                 <time dateTime={role.end.dateTime ?? role.end}>
                   {role.end.label ?? role.end}
-                </time>
+                </time> */}
               </dd>
             </dl>
           </li>
@@ -441,13 +442,14 @@ export default function Home({ articles }) {
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             {homepage.description}
           </p>
-          <div className="mt-6 flex gap-6">
+          <div className="mt-6 flex gap-6 items-center">
             {homepage.socialsMedia.map((socialMedia, i) => (
               <SocialLink
                 key={i}
                 href={socialMedia.url}
                 target="_blank"
                 aria-label={socialMedia.label}
+                size={socialMedia.size}
                 icon={
                   socialMedia.name === 'twitter'
                     ? XIcon
