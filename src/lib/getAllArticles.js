@@ -3,10 +3,10 @@
 import GhostContentAPI from '@tryghost/content-api'
 import fallbackArticles from '../data/fallback-articles.json'
 
-// Create API instance with site credentials from environment or fallback
+// Create API instance with site credentials from environment
 const ghostConfig = {
-  url: process.env.NEXT_PUBLIC_GHOST_URL || 'https://blog.ayepzaki.com',
-  key: process.env.NEXT_PUBLIC_GHOST_API_KEY || '68b8e00a726bb60554231660f8',
+  url: process.env.GHOST_URL,
+  key: process.env.GHOST_API_KEY,
   version: 'v5.0',
 }
 

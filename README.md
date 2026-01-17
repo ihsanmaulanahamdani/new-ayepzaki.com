@@ -116,9 +116,9 @@ NEXT_PUBLIC_COPYRIGHT="H. Ayep Zaki, S.E., M.M."
 # Optional - Analytics
 NEXT_PUBLIC_GA_ID=your-google-analytics-id
 
-# Optional - External APIs
-NEXT_PUBLIC_GHOST_URL=your-ghost-url
-NEXT_PUBLIC_GHOST_API_KEY=your-ghost-api-key
+# Ghost CMS Configuration (Server-side only - do NOT use NEXT_PUBLIC_ prefix)
+GHOST_URL=your-ghost-url
+GHOST_API_KEY=your-ghost-api-key
 ```
 
 ## 🔧 systemd Service Management
