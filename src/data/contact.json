@@ -1,7 +1,13 @@
 {
-  "tabTitle": "H. AYEP ZAKI, S.E., M.M.",
-  "title": "Hubungi H. AYEP ZAKI, S.E., M.M.",
-  "description": "Hubungi saya melalui email atau social media.",
+  "tabTitle": "Kontak - H. Ayep Zaki, S.E., M.M.",
+  "title": "Hubungi Wali Kota Sukabumi",
+  "description": "Sampaikan aspirasi, saran, atau pertanyaan Anda kepada Wali Kota Sukabumi melalui berbagai kanal komunikasi yang tersedia.",
+  "office": {
+    "name": "Kantor Wali Kota Sukabumi",
+    "address": "Jl. Pelabuhan II No. 1, Kota Sukabumi, Jawa Barat",
+    "email": "walikota@sukabumikota.go.id",
+    "phone": "+62-266-211800"
+  },
   "socialsMedia": [
     {
       "name": "Instagram",
