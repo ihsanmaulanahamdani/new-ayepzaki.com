@@ -341,7 +341,7 @@ export default function Contact() {
             Ikuti kegiatan dan update terbaru melalui media sosial
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
           {contact.socialsMedia.map((social, i) => (
             <SocialMediaButton
               key={i}

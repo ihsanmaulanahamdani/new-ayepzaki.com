@@ -107,7 +107,7 @@ function Article({ article }) {
             alt={article.title}
             width={208}
             height={117}
-            className="h-full w-full object-cover transition duration-300 rounded-lg"
+            className="h-full w-full rounded-lg object-cover transition duration-300"
           />
         </div>
       </Link>
@@ -120,11 +120,11 @@ function Article({ article }) {
             {formatDate(date)}
           </time>
           <Link href={`/articles/${article.slug}`}>
-            <h3 className="sm:line-clamp-2 mb-2 text-lg font-bold leading-snug tracking-tight text-zinc-900 transition hover:text-teal-600 dark:text-zinc-100 dark:hover:text-teal-400 sm:text-xl">
+            <h3 className="mb-2 text-lg font-bold leading-snug tracking-tight text-zinc-900 transition hover:text-teal-600 dark:text-zinc-100 dark:hover:text-teal-400 sm:line-clamp-2 sm:text-xl">
               {article.title}
             </h3>
           </Link>
-          <p className="line-clamp-2 sm:line-clamp-1 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+          <p className="line-clamp-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 sm:line-clamp-1">
             {article.excerpt}
           </p>
         </div>
@@ -181,12 +181,6 @@ function Resume() {
       time: '2025 - 2030',
     },
     {
-      company: 'Tempe Azaki',
-      title: 'Pendiri',
-      logo: logoAZAKI,
-      time: '2019',
-    },
-    {
       company: 'Forum Komunikasi Doa Bangsa',
       title: 'Pendiri',
       logo: logoFKDB,
@@ -197,6 +191,12 @@ function Resume() {
       title: 'Pendiri',
       logo: logoYPPDB,
       time: '2010',
+    },
+    {
+      company: 'Tempe Azaki',
+      title: 'Pendiri',
+      logo: logoAZAKI,
+      time: '2005',
     },
   ]
 
@@ -306,7 +306,7 @@ export default function Home({ articles }) {
         structuredData={structuredData}
       />
       <Container className="mt-10 lg:mt-0">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12 min-h-screen lg:items-center">
+        <div className="grid min-h-screen grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center lg:gap-12">
           {/* Text Content */}
           <div className="order-2 lg:order-1">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
@@ -325,7 +325,7 @@ export default function Home({ articles }) {
                 &ldquo;{homepage.tagline}&rdquo;
               </p>
             )}
-            
+
             {/* Social Links */}
             <div className="mt-8">
               <h2 className="mb-3 text-sm font-semibold text-zinc-700 dark:text-zinc-400">
@@ -351,7 +351,7 @@ export default function Home({ articles }) {
               </div>
             </div>
           </div>
-          
+
           {/* Portrait Image */}
           <div className="order-1 lg:order-2">
             <div className="relative mx-auto max-w-sm lg:max-w-none">
@@ -379,7 +379,7 @@ export default function Home({ articles }) {
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
-          <div className="lg:col-span-3 space-y-8">
+          <div className="space-y-8 lg:col-span-3">
             {articles?.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
@@ -387,7 +387,7 @@ export default function Home({ articles }) {
               <Button
                 href="/articles"
                 variant="secondary"
-                className="w-full sm:w-auto rounded-xl"
+                className="w-full rounded-xl sm:w-auto"
               >
                 Lihat Semua Artikel
               </Button>
