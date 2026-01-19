@@ -39,6 +39,7 @@ export const siteConfig = {
     facebook: 'https://www.facebook.com/ayepzaki.official',
     twitter: 'https://twitter.com/ayepzaki_resmi',
   },
+  defaultOgImage: '/images/photos/og-ayepzaki.png',
   defaultMeta: {
     title: 'H. Ayep Zaki, S.E., M.M. - Wali Kota Sukabumi',
     description: 'Website resmi H. Ayep Zaki, S.E., M.M. - Wali Kota Sukabumi ke-23 periode 2025-2030. Membangun Kota Sukabumi yang Maju, Sejahtera, dan Berkarakter.',
@@ -75,7 +76,7 @@ export function generateSEO({
       siteName: siteConfig.siteName,
       images: [
         {
-          url: ogImage || `${siteConfig.siteUrl}${siteConfig.author.image}`,
+          url: ogImage || `${siteConfig.siteUrl}${siteConfig.defaultOgImage}`,
           width: 1200,
           height: 630,
           alt: ogImageAlt || siteConfig.author.name,
@@ -88,7 +89,7 @@ export function generateSEO({
       creator: siteConfig.twitterHandle,
       title: title || siteConfig.defaultMeta.title,
       description: description || siteConfig.defaultMeta.description,
-      image: ogImage || `${siteConfig.siteUrl}${siteConfig.author.image}`,
+      image: ogImage || `${siteConfig.siteUrl}${siteConfig.defaultOgImage}`,
     },
     additionalMetaTags: [
       { name: 'keywords', content: siteConfig.defaultMeta.keywords },

@@ -11,11 +11,6 @@ import {
   XIcon,
   YoutubeIcon,
 } from '@/components/SocialIcons'
-import logoSukabumi from '@/images/logos/sukabumi.png'
-import logoFKDB from '@/images/logos/fkdb.jpg'
-import logoYPPDB from '@/images/logos/yppdb.png'
-import logoAZAKI from '@/images/logos/azaki.png'
-import portraitImage from '@/images/photos/ayep-zaki.png'
 import { formatDate } from '@/lib/formatDate'
 import { getGhostArticles } from '@/lib/getAllArticles'
 import {
@@ -26,6 +21,8 @@ import {
 } from '@/lib/seo'
 
 import homepage from '../data/homepage.json'
+
+const portraitImage = '/images/photos/ayep-zaki.png'
 
 function BriefcaseIcon(props) {
   return (
@@ -177,25 +174,25 @@ function Resume() {
     {
       company: 'Kota Sukabumi',
       title: 'Wali Kota Sukabumi ke-23',
-      logo: logoSukabumi,
+      logo: '/images/logos/sukabumi.png',
       time: '2025 - 2030',
     },
     {
       company: 'Forum Komunikasi Doa Bangsa',
       title: 'Pendiri',
-      logo: logoFKDB,
+      logo: '/images/logos/fkdb.jpg',
       time: '2015',
     },
     {
       company: 'Yayasan Pembina Pendidikan Doa Bangsa',
       title: 'Pendiri',
-      logo: logoYPPDB,
+      logo: '/images/logos/yppdb.png',
       time: '2010',
     },
     {
       company: 'Tempe Azaki',
       title: 'Pendiri',
-      logo: logoAZAKI,
+      logo: '/images/logos/azaki.png',
       time: '2005',
     },
   ]
@@ -215,6 +212,8 @@ function Resume() {
               <Image
                 src={role.logo}
                 alt=""
+                width={28}
+                height={28}
                 className="h-7 w-7 rounded-full"
                 unoptimized
               />
@@ -301,7 +300,7 @@ export default function Home({ articles }) {
         description={homepage.description}
         canonical="/"
         ogType="website"
-        ogImage={`${siteConfig.siteUrl}/images/photos/ayep-zaki.png`}
+        ogImage={`${siteConfig.siteUrl}${siteConfig.defaultOgImage}`}
         ogImageAlt="H. Ayep Zaki, S.E., M.M. - Wali Kota Sukabumi"
         structuredData={structuredData}
       />
@@ -359,6 +358,8 @@ export default function Home({ articles }) {
                 <Image
                   src={portraitImage}
                   alt="H. Ayep Zaki"
+                  width={512}
+                  height={512}
                   sizes="(min-width: 1024px) 32rem, 24rem"
                   className="h-full w-full object-cover object-top"
                   priority

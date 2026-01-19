@@ -86,7 +86,7 @@ export default function ArticlesIndex({ articles, pagination }) {
           description={article.description}
           canonical="/articles"
           ogType="website"
-          ogImage={`${siteConfig.siteUrl}/images/photos/ayep-zaki.png`}
+          ogImage={`${siteConfig.siteUrl}${siteConfig.defaultOgImage}`}
           ogImageAlt="Berita & Kegiatan - H. Ayep Zaki"
         />
         
@@ -151,7 +151,7 @@ export default function ArticlesIndex({ articles, pagination }) {
         description={article.description}
         canonical="/articles"
         ogType="website"
-        ogImage={`${siteConfig.siteUrl}/images/photos/ayep-zaki.png`}
+        ogImage={`${siteConfig.siteUrl}${siteConfig.defaultOgImage}`}
         ogImageAlt="Berita & Kegiatan - H. Ayep Zaki"
         structuredData={structuredData}
       />

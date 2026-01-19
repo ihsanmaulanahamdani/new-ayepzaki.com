@@ -3,7 +3,6 @@ import Link from 'next/link'
 
 import { Container } from '@/components/Container'
 import SEO from '@/components/SEO'
-import portraitImage from '@/images/photos/ayep-zaki.png'
 import {
   siteConfig,
   generateContactPageSchema,
@@ -11,6 +10,8 @@ import {
 } from '@/lib/seo'
 
 import contact from '../data/contact.json'
+
+const portraitImage = '/images/photos/ayep-zaki.png'
 
 function OfficeIcon(props) {
   return (
@@ -231,7 +232,7 @@ export default function Contact() {
         description={contact.description}
         canonical="/contact"
         ogType="website"
-        ogImage={`${siteConfig.siteUrl}/images/photos/ayep-zaki.png`}
+        ogImage={`${siteConfig.siteUrl}${siteConfig.defaultOgImage}`}
         ogImageAlt="Hubungi Wali Kota Sukabumi - H. Ayep Zaki"
         structuredData={structuredData}
       />

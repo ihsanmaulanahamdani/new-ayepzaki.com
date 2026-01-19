@@ -10,7 +10,6 @@ import {
   XIcon,
   YoutubeIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/photos/ayep-zaki.png'
 import {
   siteConfig,
   generateAboutPageSchema,
@@ -18,6 +17,8 @@ import {
 } from '@/lib/seo'
 
 import about from '../data/about.json'
+
+const portraitImage = '/images/photos/ayep-zaki.png'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -81,7 +82,7 @@ export default function About() {
         description={pageDescription}
         canonical="/about"
         ogType="profile"
-        ogImage={`${siteConfig.siteUrl}/images/photos/ayep-zaki.png`}
+        ogImage={`${siteConfig.siteUrl}${siteConfig.defaultOgImage}`}
         ogImageAlt={about.title}
         structuredData={structuredData}
       />
@@ -93,6 +94,8 @@ export default function About() {
                 <Image
                   src={portraitImage}
                   alt=""
+                  width={640}
+                  height={640}
                   sizes="(min-width: 1024px) 40rem, 28rem"
                   className="h-full w-full object-cover object-top"
                 />

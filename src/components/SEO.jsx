@@ -29,7 +29,7 @@ export default function SEO({
   const pageTitle = title || siteConfig.defaultMeta.title
   const pageDescription = description || siteConfig.defaultMeta.description
   const pageUrl = canonical ? `${siteConfig.siteUrl}${canonical}` : siteConfig.siteUrl
-  const pageImage = ogImage || `${siteConfig.siteUrl}${siteConfig.author.image}`
+  const pageImage = ogImage || `${siteConfig.siteUrl}${siteConfig.defaultOgImage}`
   const imageAlt = ogImageAlt || siteConfig.author.name
 
   return (
