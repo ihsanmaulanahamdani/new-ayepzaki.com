@@ -77,7 +77,7 @@ export function ArticleLayout({
         structuredData={structuredData}
       />
 
-      <Container className="lg:mt-12">
+      <Container className="mt-10 lg:mt-12">
         <div className="xl:relative">
           <div className="mx-auto w-full">
             {previousPathname && (
@@ -123,8 +123,11 @@ export function ArticleLayout({
                         alt={meta.title}
                         width={1200}
                         height={630}
+                        quality={65}
                         className="h-full w-full object-cover rounded-2xl"
                         priority
+                        placeholder="blur"
+                        blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2MzAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2U0ZTRlNyIvPjwvc3ZnPg=="
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/60 via-zinc-900/20 to-transparent"></div>
                     </div>

@@ -41,12 +41,16 @@ function Article({ article }) {
             alt={article.title}
             width={400}
             height={225}
+            quality={60}
+            loading="eager"
+            placeholder="blur"
+            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIyNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZTRlNGU3Ii8+PC9zdmc+"
             className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
           />
         </div>
         
         {/* Content */}
-        <div className="p-6">
+        <div className="p-4">
           {/* Date Badge */}
           <div className="mb-3 flex items-center gap-2 text-sm text-zinc-500 dark:text-zinc-400">
             <CalendarIcon className="h-4 w-4" />
@@ -54,12 +58,12 @@ function Article({ article }) {
           </div>
           
           {/* Title */}
-          <h3 className="line-clamp-3 mb-3 text-xl font-bold tracking-tight text-zinc-900 transition group-hover:text-teal-600 dark:text-white dark:group-hover:text-teal-400">
+          <h3 className="line-clamp-2 mb-3 text-lg font-semibold tracking-tight text-zinc-900 transition group-hover:text-teal-600 dark:text-white dark:group-hover:text-teal-400">
             {article.title}
           </h3>
           
           {/* Excerpt */}
-          <p className="line-clamp-3 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="line-clamp-3 text-sm text-zinc-600 dark:text-zinc-400">
             {article.excerpt}
           </p>
           

@@ -93,7 +93,7 @@ function Article({ article }) {
   const date = article.published_at.split('T')[0]
 
   return (
-    <article className="group relative flex flex-col gap-4 rounded-xl border border-zinc-200 bg-white p-4 shadow-sm transition hover:border-teal-500 hover:shadow-md dark:border-zinc-700/40 dark:bg-zinc-800/50 dark:hover:border-teal-500/50 sm:flex-row sm:gap-6 sm:p-4">
+    <article className="group relative flex flex-col gap-3 rounded-xl border border-zinc-200 bg-white p-3 shadow-sm transition hover:border-teal-500 hover:shadow-md dark:border-zinc-700/40 dark:bg-zinc-800/50 dark:hover:border-teal-500/50 sm:flex-row sm:gap-3 sm:p-3">
       <Link
         href={`/articles/${article.slug}`}
         className="relative flex-shrink-0 overflow-hidden rounded-lg"
@@ -117,7 +117,7 @@ function Article({ article }) {
             {formatDate(date)}
           </time>
           <Link href={`/articles/${article.slug}`}>
-            <h3 className="mb-2 text-lg font-bold leading-snug tracking-tight text-zinc-900 transition hover:text-teal-600 dark:text-zinc-100 dark:hover:text-teal-400 sm:line-clamp-2 sm:text-xl">
+            <h3 className="mb-2 text-base font-semibold leading-snug tracking-tight text-zinc-900 transition hover:text-teal-600 dark:text-zinc-100 dark:hover:text-teal-400 sm:line-clamp-2 sm:text-lg">
               {article.title}
             </h3>
           </Link>
